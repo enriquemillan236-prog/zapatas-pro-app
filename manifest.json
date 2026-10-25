@@ -1,0 +1,32 @@
+{
+  "name": "Diseñador y Verificador de Zapatas Aisladas PRO v2.5",
+  "short_name": "Zapatas PRO",
+  "description": "Software técnico para el diseño geotécnico y estructural de zapatas aisladas de concreto armado según normas ACI 318-19, NB 1225001 y NTE E.060.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#143d29",
+  "background_color": "#f5f5f0",
+  "categories": ["engineering", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

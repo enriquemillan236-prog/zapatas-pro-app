@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b4d35" />
+      <stop offset="100%" stop-color="#0f2e1f" />
+    </linearGradient>
+    <linearGradient id="concGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f5f0" />
+      <stop offset="100%" stop-color="#d6d9d2" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ade80" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Background -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+  <rect x="16" y="16" width="480" height="480" rx="94" fill="none" stroke="#2d6a4f" stroke-width="4" opacity="0.6" />
+
+  <!-- Engineering Grid Lines (Subtle) -->
+  <g stroke="#ffffff" stroke-opacity="0.07" stroke-width="2">
+    <line x1="64" y1="128" x2="448" y2="128" />
+    <line x1="64" y1="256" x2="448" y2="256" />
+    <line x1="64" y1="384" x2="448" y2="384" />
+    <line x1="128" y1="64" x2="128" y2="448" />
+    <line x1="256" y1="64" x2="256" y2="448" />
+    <line x1="384" y1="64" x2="384" y2="448" />
+  </g>
+
+  <!-- Soil Bearing Arrows (q_u) -->
+  <g stroke="#4ade80" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <line x1="116" y1="435" x2="116" y2="398" />
+    <polyline points="106,408 116,396 126,408" fill="none" />
+    <line x1="186" y1="435" x2="186" y2="398" />
+    <polyline points="176,408 186,396 196,408" fill="none" />
+    <line x1="256" y1="435" x2="256" y2="398" />
+    <polyline points="246,408 256,396 266,408" fill="none" />
+    <line x1="326" y1="435" x2="326" y2="398" />
+    <polyline points="316,408 326,396 336,408" fill="none" />
+    <line x1="396" y1="435" x2="396" y2="398" />
+    <polyline points="386,408 396,396 406,408" fill="none" />
+    <line x1="90" y1="438" x2="422" y2="438" />
+  </g>
+
+  <!-- Isolated Footing Concrete Shape (Column + Trapezoid/Stepped Base) -->
+  <path d="M 206 105 L 306 105 L 306 235 L 420 275 L 420 375 L 92 375 L 92 275 L 206 235 Z"
+        fill="url(#concGrad)" stroke="#ffffff" stroke-width="6" stroke-linejoin="round" />
+
+  <!-- Column Vertical Rebar & Ties -->
+  <g stroke="#143d29" stroke-width="6" stroke-linecap="round">
+    <line x1="228" y1="115" x2="228" y2="342" />
+    <line x1="284" y1="115" x2="284" y2="342" />
+    <!-- Hooks at bottom -->
+    <line x1="228" y1="342" x2="195" y2="342" />
+    <line x1="284" y1="342" x2="317" y2="342" />
+    <!-- Stirrups -->
+    <line x1="222" y1="145" x2="290" y2="145" stroke-width="4" opacity="0.7" />
+    <line x1="222" y1="185" x2="290" y2="185" stroke-width="4" opacity="0.7" />
+    <line x1="222" y1="225" x2="290" y2="225" stroke-width="4" opacity="0.7" />
+  </g>
+
+  <!-- Footing Bottom Flexural Rebar (As_x / As_y) -->
+  <path d="M 114 328 L 114 350 L 398 350 L 398 328"
+        fill="none" stroke="#d97706" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+
+  <!-- Transverse Rebar Dots -->
+  <g fill="#143d29">
+    <circle cx="140" cy="336" r="6" />
+    <circle cx="178" cy="336" r="6" />
+    <circle cx="216" cy="336" r="6" />
+    <circle cx="256" cy="336" r="6" />
+    <circle cx="296" cy="336" r="6" />
+    <circle cx="334" cy="336" r="6" />
+    <circle cx="372" cy="336" r="6" />
+  </g>
+
+  <!-- Axial Load Arrow Pu at Top -->
+  <g stroke="#fbbf24" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="256" y1="46" x2="256" y2="94" />
+    <polyline points="238,76 256,96 274,76" fill="none" />
+  </g>
+
+  <!-- PRO Badge -->
+  <rect x="330" y="52" width="122" height="48" rx="14" fill="url(#accentGrad)" />
+  <text x="391" y="84" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="26" fill="#0f2e1f" text-anchor="middle" letter-spacing="1.5">PRO</text>
+</svg>
